@@ -1,7 +1,7 @@
-console.clear();
+// console.clear();
 
 function ten() {
-  console.log(10);
+  return 10;
 }
 
 function sum() {
@@ -12,12 +12,20 @@ function sum() {
 //test, in other frameworks known as it.("Should Do a Thing.")
 //expect (assertion library)
 
-function expect(actual, expected, label = "") {
-  console.log(`- ${label}`);
-  if (actual !== expected) {
-    console.log(`X - FAIL - expected ${actual} to equal ${expected}`);
-  }
-}
+describe("ten()", () => {
+  test("Should Return 10", () => {
+    expect(ten()).toBe(10);
+    //expect invokes whatever is passed in as its argument, and return an
+    //expectation object that has methods on it like .toBe(), toMatch(), toBeGreaterThan().
+  });
+});
 
-console.log("\n Testing ten function:");
-expect(ten(), 10, "ten() should return 10");
+// function expect(actual, expected, label = "") {
+//   console.log(`- ${label}`);
+//   if (actual !== expected) {
+//     console.log(`X - FAIL - expected ${actual} to equal ${expected}`);
+//   }
+// }
+
+// console.log("\n Testing ten function:");
+// expect(ten(), 10, "ten() should return 10");
