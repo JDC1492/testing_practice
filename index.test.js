@@ -12,6 +12,9 @@ function sum() {
 //test, in other frameworks known as it.("Should Do a Thing.")
 //expect (assertion library)
 
+//tests are normally invoked in the command line as'jest "file name.test(.js)" --watch'
+//running this command introduces the three keywords describe, expect, and test into the global scope.
+
 describe("ten()", () => {
   test("Should Return 10", () => {
     expect(ten()).toBe(10);
