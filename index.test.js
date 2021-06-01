@@ -4,8 +4,9 @@ function ten() {
   return 10;
 }
 
-function sum() {
+function sum(a, b) {
   //should return the product of arguments
+  return 7 + 3;
 }
 
 //describe
@@ -18,6 +19,14 @@ function sum() {
 describe("ten()", () => {
   test("Should Return 10", () => {
     expect(ten()).toBe(10);
+    //expect invokes whatever is passed in as its argument, and return an
+    //expectation object that has methods on it like .toBe(), toMatch(), toBeGreaterThan().
+  });
+});
+
+describe("sum()", () => {
+  test("Should Return 10", () => {
+    expect(sum()).toBe(10);
     //expect invokes whatever is passed in as its argument, and return an
     //expectation object that has methods on it like .toBe(), toMatch(), toBeGreaterThan().
   });
