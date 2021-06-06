@@ -9,6 +9,10 @@ function sum(a, b) {
   return 7 + 3;
 }
 
+function product(a, b) {
+  return a * b;
+}
+
 //describe
 //test, in other frameworks known as it.("Should Do a Thing.")
 //expect (assertion library)
@@ -29,6 +33,12 @@ describe("sum()", () => {
     expect(sum()).toBe(10);
     //expect invokes whatever is passed in as its argument, and return an
     //expectation object that has methods on it like .toBe(), toMatch(), toBeGreaterThan().
+  });
+});
+
+describe("product()", () => {
+  test("Should return the product of a and b", () => {
+    expect(product()).toBe();
   });
 });
 
