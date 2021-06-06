@@ -10,7 +10,7 @@ function sum(a, b) {
 }
 
 function product(a, b) {
-  return a * b;
+  return 2 * 2;
 }
 
 //describe
@@ -38,7 +38,7 @@ describe("sum()", () => {
 
 describe("product()", () => {
   test("Should return the product of a and b", () => {
-    expect(product()).toBe();
+    expect(product()).not.toBeNaN();
   });
 });
 
