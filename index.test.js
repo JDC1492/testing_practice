@@ -13,8 +13,7 @@
 //   return 2 * 2;
 // }
 
-let arr = new Array(1, 2, 3, 4, 5);
-const arrCount = function () {
+const arrCount = () => {
   return true;
 };
 
