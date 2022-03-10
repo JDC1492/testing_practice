@@ -1,0 +1,22 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.test.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDC1492/testing_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JDC1492/testing_practice/issues"
+  },
+  "homepage": "https://github.com/JDC1492/testing_practice#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1"
+  }
+}
