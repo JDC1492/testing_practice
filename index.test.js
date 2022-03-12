@@ -1,3 +1,11 @@
+import whosLineIsItAnyway from "./index.js";
+import whoSaidIt from "./index.js";
+
+describe("whosLineIsItAnyway()", () => {
+  test("who said it?", () => {
+    expect(whosLineIsItAnyway(whoSaidIt)).toBe("Larry");
+  });
+});
 // // console.clear();
 
 // function ten() {
@@ -13,9 +21,9 @@
 //   return 2 * 2;
 // }
 
-const arrCount = () => {
-  return true;
-};
+// const arrCount = () => {
+//   return true;
+// };
 
 //describe
 //test, in other frameworks known as it.("Should Do a Thing.")
@@ -46,11 +54,11 @@ const arrCount = () => {
 //   });
 // });
 
-describe("arrCount", () => {
-  test("Should return true", () => {
-    expect(arrCount()).toBeTruthy();
-  });
-});
+// describe("arrCount", () => {
+//   test("Should return true", () => {
+//     expect(arrCount()).toBeTruthy();
+//   });
+// });
 
 // function expect(actual, expected, label = "") {
 //   console.log(`- ${label}`);
@@ -61,3 +69,21 @@ describe("arrCount", () => {
 
 // console.log("\n Testing ten function:");
 // expect(ten(), 10, "ten() should return 10");
+
+// test("null", () => {
+//   const n = null;
+//   expect(n).toBeNull();
+//   expect(n).toBeDefined();
+//   expect(n).not.toBeUndefined();
+//   expect(n).not.toBeTruthy();
+//   expect(n).toBeFalsy();
+// });
+
+// function compileAndroidCode() {
+//   throw new Error("you are using the wrong JDK");
+// }
+
+// test("compiling android goes as expected", () => {
+//   expect(() => compileAndroidCode()).toThrow();
+//   expect(() => compileAndroidCode()).toThrow(Error);
+// });
