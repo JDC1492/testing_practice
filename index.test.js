@@ -1,11 +1,16 @@
-import whosLineIsItAnyway from "./index.js";
-import whoSaidIt from "./index.js";
+// import whosLineIsItAnyway from "./index.js";
+// import whoSaidIt from "./index.js";
+
+// const whoSaidIt = require("./index");
+const whosLineIsItAnyway = require("./index");
 
 describe("whosLineIsItAnyway()", () => {
   test("who said it?", () => {
+    const whoSaidIt = "Larry";
     expect(whosLineIsItAnyway(whoSaidIt)).toBe("Larry");
   });
 });
+
 // // console.clear();
 
 // function ten() {
