@@ -10,7 +10,7 @@ describe("whosLineIsItAnyway()", () => {
     expect(whosLineIsItAnyway(whoSaidIt)).toBe("Larry");
   });
 });
-
+//Going over testing items.
 // // console.clear();
 
 // function ten() {
